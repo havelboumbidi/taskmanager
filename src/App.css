@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #581d6d;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +24,46 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.expandable-div {
+  min-height: 100px; /* Set a minimum height */
+  border: 1px solid #332349; 
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #332349;
+  width: 30%;
+  margin-top: 50px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.centered-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start;
+  height: 100vh; 
+}
+
+.expandable-div h3{
+  color: #ccc;
+}
+.custom-input {
+  color: #ccc; /* Change the text color */
+  border: 1px solid #ccc; /* Add a border for visibility */
+}
+.custom-button{
+  background-color: #8f58dc;
+  color:#ccc;
+  border: 1px solid #8f58dc;
+}
+.taskDesign{
+  background-color:#8f58dc ;
+  color:#ccc;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 9px;
+}
+.completed-task {
+  text-decoration: line-through;
 }
